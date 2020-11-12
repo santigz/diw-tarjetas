@@ -1,0 +1,56 @@
+body {
+  background-color: #e5eff1;
+  padding: 30px;
+}
+.card {
+  width: 400px;
+  background-color: white;
+  margin: auto;
+  position: relative;
+  padding: 10px;
+}
+.card > .inner {
+  background: rgb(207,236,49);
+background: linear-gradient(180deg, rgba(147,236,49,1) 0%, rgba(7,226,150,1) 100%);
+}
+.card > .inner > img {
+  width: 40%;
+  display: block;
+  margin: auto;
+  padding: 50px 0;
+}
+.card > .inner > .person {
+  background-color: #465b6c;
+  position: relative;
+  left: -40px;
+  width: calc(100% + 70px);
+  text-align: center;
+  color: white;
+  font-family: sans-serif;
+  padding: .3em;
+}
+.card > .inner > .person::before {
+  content: '';
+  position: absolute;
+  width: calc(100% - 20px);
+  height: 100%;
+  top: -5px;
+  left: 10px;
+  background-color: #335;
+  z-index: -1;
+}
+
+.card .social {
+  text-align: center;
+  padding: 20px;
+}
+.card .social img {
+  display: inline-block;
+  width: 30px;
+  opacity: 0.6;
+  margin: 0 5px;
+}
+.card .social a:hover {
+  position: relative;
+  top: -5px;
+}
